@@ -5,3 +5,5 @@
 [엔트리 디버거](http://policy.205.kr/EntryDebugger)
 
 [엔트리 세이브 매니저](http://policy.205.kr/EntrySaveManager)
+
+[엔트리 작품 합치기 확장 프로그램](http://policy.205.kr/EntryMergeExtension)
