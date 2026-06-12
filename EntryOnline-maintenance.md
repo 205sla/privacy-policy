@@ -1,17 +1,17 @@
 # Entry Online 개인정보처리방침 관리
 
-`EntryOnline.html`은 CODE 205 전체 서비스가 아니라 Entry Online Chrome 확장
-프로그램 전용 개인정보처리방침이다.
+`EntryOnline.html`은 Entry Online 독립 서버 전체의 정책이 아니라 Entry Online
+Chrome 확장 프로그램 전용 개인정보처리방침이다.
 
 ## 갱신이 필요한 경우
 
 - 확장 권한, host permission 또는 지원 사이트가 바뀐다.
-- CODE 205로 전송하는 식별자나 변수·리스트 데이터가 바뀐다.
+- Entry Online 서버로 전송하는 식별자나 변수·리스트 데이터가 바뀐다.
 - 사용량, 접속 로그, 재접속 토큰의 저장·보유·삭제 방식이 바뀐다.
 - 광고, 분석 SDK, 결제 또는 새로운 외부 서비스가 추가된다.
 - 개발자 연락처나 Chrome Web Store 정책 요구사항이 바뀐다.
 
-수정할 때는 확장 manifest와 CODE 205의 `src/realtime/`, `sync_usage`,
+수정할 때는 확장 manifest와 Entry Online 서버의 `src/realtime/`, `sync_usage`,
 계정 삭제 동작을 먼저 확인한다. 구현으로 보장하지 않는 고정 보유 기간은
 정책에 약속하지 않는다. 관계 고지는
 `본 확장 프로그램은 엔트리의 공식 확장 프로그램이 아닙니다.`만 사용한다.
