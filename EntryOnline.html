@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인정보 처리방침 - Entry Online</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2em;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        code {
+            background-color: #f4f6f8;
+            border-radius: 4px;
+            padding: 1px 4px;
+        }
+        .date {
+            color: #666;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .notice {
+            background-color: #fff8e8;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #e3a008;
+            margin: 20px 0;
+        }
+        .contact-info {
+            background-color: #f1f8ff;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #315efb;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 12px;
+            }
+            .container {
+                padding: 24px 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>개인정보 처리방침 (Privacy Policy)</h1>
+        <p class="date">시행일자: 2026년 6월 12일</p>
+
+        <p><strong>Entry Online</strong> (이하 "본 확장 프로그램")은 엔트리 작품의 <code>$</code> 접두 변수와 리스트를 같은 온라인 방의 이용자 사이에서 실시간 동기화하는 기능을 제공합니다. 본 개인정보 처리방침은 본 확장 프로그램이 기능 제공 과정에서 사용자 데이터를 어떻게 처리하는지 안내합니다.</p>
+
+        <div class="notice">
+            <strong>비공식 안내:</strong> 본 확장 프로그램은 엔트리의 공식 확장 프로그램이 아닙니다.
+        </div>
+
+        <h2>1. 처리하는 사용자 데이터</h2>
+        <p>본 확장 프로그램은 이용자가 엔트리 작품에서 <code>$입장("CODE 205 아이디")</code> 함수를 호출해 온라인 방에 입장한 경우에만 다음 정보를 처리합니다.</p>
+        <ul>
+            <li><strong>방 식별 정보:</strong> 현재 엔트리 작품 ID와 작품 등록에 사용된 CODE 205 아이디</li>
+            <li><strong>동기화 데이터:</strong> 작품 안의 <code>$</code> 접두 변수·리스트의 이름, 내부 식별자 및 값</li>
+            <li><strong>연결 정보:</strong> 방 ID, 배정 슬롯, 연결 상태 및 일시적인 재접속 토큰</li>
+            <li><strong>사용량 통계:</strong> 작품별 연결 횟수, 수신·송신 메시지 횟수와 바이트 크기</li>
+            <li><strong>서버 접속 로그:</strong> 서비스 보안과 장애 진단을 위해 서버에 기록될 수 있는 IP 주소, User-Agent, 접속 시각 및 요청 정보</li>
+        </ul>
+        <p>변수와 리스트에는 작품 제작자가 입력한 내용이 포함될 수 있습니다. 이용자는 개인정보나 민감한 정보를 동기화 대상 변수·리스트에 저장하지 않아야 합니다.</p>
+
+        <h2>2. 데이터 처리 목적</h2>
+        <ul>
+            <li>같은 작품과 CODE 205 아이디로 선택된 온라인 방의 이용자 매칭</li>
+            <li>방 참가자 사이의 변수·리스트 실시간 동기화와 재동기화</li>
+            <li>연결 상태와 사용자 슬롯 번호 표시</li>
+            <li>서비스 사용량 표시, 용량 관리, 장애 진단 및 비정상 트래픽 방지</li>
+        </ul>
+        <p>수집된 데이터는 위 기능을 제공하고 개선하기 위한 용도로만 사용하며, 광고·신용평가·데이터 판매 또는 이용자 추적 목적으로 사용하지 않습니다.</p>
+
+        <h2>3. 전송 및 공유</h2>
+        <p>온라인 방에 입장하면 방 식별 정보와 동기화 데이터가 암호화된 WebSocket 연결(<code>wss://code.205.kr/sync</code>)을 통해 서버로 전송됩니다. 동기화 데이터는 같은 방에 참가한 다른 이용자의 브라우저로 전달되므로, 해당 방 참가자는 변수·리스트의 이름과 값을 수신할 수 있습니다.</p>
+        <p>서버는 Oracle Cloud Infrastructure 환경에서 운영됩니다. 호스팅 제공 목적 외에 사용자 데이터를 광고 사업자, 데이터 중개업자 또는 기타 제3자에게 판매하거나 제공하지 않습니다. 다만 법령에 따른 적법한 요청이 있는 경우 필요한 범위에서 처리할 수 있습니다.</p>
+
+        <h2>4. 저장 및 보유 기간</h2>
+        <ul>
+            <li><strong>변수·리스트 상태:</strong> 현재 방의 재동기화를 위해 서버 메모리에만 임시 보관되며, 방의 마지막 연결과 재접속 예약이 모두 사라지면 삭제됩니다. 데이터베이스에는 원본 값을 저장하지 않습니다.</li>
+            <li><strong>재접속 토큰:</strong> 브라우저 메모리와 서버 메모리에만 일시적으로 보관되며, 연결 종료·만료 또는 방 폐기 시 삭제됩니다.</li>
+            <li><strong>사용량 통계:</strong> CODE 205 계정과 작품 ID를 기준으로 일자별 합산하여 저장합니다. 작품 등록을 해제해도 누적 총합을 제공하기 위해 유지되며, 해당 CODE 205 계정을 삭제하면 함께 삭제됩니다.</li>
+            <li><strong>서버 접속 로그:</strong> 서버 또는 리버스 프록시에서 로그가 생성되는 경우 운영 로그 회전 정책에 따라 오래된 파일부터 삭제합니다. 보안 사고 조사나 법령상 보존 의무가 있는 경우를 제외하고 영구 보관하지 않습니다.</li>
+            <li><strong>확장 로컬 저장소:</strong> 최근 연결 상태를 Chrome 로컬 저장소에 저장합니다. 오래된 연결 상태는 자동 정리되며 확장 프로그램을 삭제하면 함께 제거됩니다.</li>
+        </ul>
+
+        <h2>5. 권한 사용 목적</h2>
+        <ul>
+            <li><strong>엔트리 사이트 접근:</strong> 지원되는 엔트리 작품 실행 페이지에서 변수·리스트와 작품 실행 상태를 읽고 동기화된 값을 적용하기 위해 사용합니다.</li>
+            <li><strong>ActiveTab 권한:</strong> 이용자가 확장 아이콘을 눌렀을 때 현재 탭의 엔트리 작품 ID와 연결 상태를 팝업에 표시하기 위해 사용합니다.</li>
+            <li><strong>Storage 권한:</strong> 최근 연결 상태를 팝업에 표시하기 위해 확장 프로그램의 로컬 저장소를 사용합니다.</li>
+            <li><strong>code.205.kr 호스트 권한:</strong> 동기화 서버와 암호화된 WebSocket 연결을 열기 위해 사용합니다.</li>
+        </ul>
+
+        <h2>6. 이용자의 선택과 데이터 삭제</h2>
+        <ul>
+            <li><code>$나가기</code> 함수를 호출하거나 작품 실행을 정지하면 현재 온라인 방에서 나가며 실시간 전송이 중단됩니다.</li>
+            <li>Chrome에서 본 확장 프로그램을 삭제하면 확장 로컬 저장소와 권한이 제거됩니다.</li>
+            <li>CODE 205의 작품 등록 해제 기능은 새로운 입장을 중단하지만 과거 사용량 통계는 계정 총합에 유지됩니다.</li>
+            <li>CODE 205 계정을 삭제하면 작품 등록과 계정에 귀속된 사용량 통계가 함께 삭제됩니다.</li>
+            <li>개인정보 및 접속 로그 관련 요청은 아래 문의처로 접수할 수 있습니다.</li>
+        </ul>
+
+        <h2>7. Chrome Web Store 사용자 데이터 정책</h2>
+        <p>본 확장 프로그램은 Chrome Web Store 사용자 데이터 정책과 Limited Use 요구사항을 준수합니다. 사용자 데이터는 본 확장 프로그램의 단일 목적인 엔트리 작품 온라인 변수·리스트 동기화 기능을 제공하거나 개선하는 데 필요한 범위에서만 사용됩니다.</p>
+        <p lang="en">The use of information received from Chrome APIs will adhere to the Chrome Web Store User Data Policy, including the Limited Use requirements.</p>
+
+        <h2>8. 아동의 개인정보 보호</h2>
+        <p>본 확장 프로그램은 별도의 연령 확인 절차를 제공하지 않습니다. CODE 205 계정 등록은 해당 서비스의 가입 기준을 따르며, 보호자는 아동이 개인정보나 민감한 정보를 동기화 변수·리스트에 입력하지 않도록 지도해야 합니다.</p>
+
+        <h2>9. 개인정보 처리방침의 변경</h2>
+        <p>본 개인정보 처리방침은 법령, Chrome Web Store 정책 또는 확장 프로그램 기능의 변경에 따라 수정될 수 있습니다. 변경 사항은 본 페이지에 시행일자와 함께 게시합니다.</p>
+
+        <h2>10. 개인정보 보호 책임자 및 문의처</h2>
+        <p>본 개인정보 처리방침 또는 본 확장 프로그램의 데이터 처리에 관한 문의는 아래 연락처로 접수해 주시기 바랍니다.</p>
+
+        <div class="contact-info">
+            <ul>
+                <li><strong>개발자 및 개인정보 보호 책임자:</strong> 이영호</li>
+                <li><strong>문의 (이메일):</strong> <a href="mailto:205@205.kr">205@205.kr</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
