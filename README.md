@@ -10,4 +10,6 @@
 
 [Entry Online](http://policy.205.kr/EntryOnline.html)
 
+[Entry Online 개발자 도구](http://policy.205.kr/EntryOnlineDevtools.html)
+
 관리 지침: [Entry Online 개인정보처리방침 관리](EntryOnline-maintenance.md)
